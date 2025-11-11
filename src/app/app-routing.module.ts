@@ -5,11 +5,7 @@ const routes: Routes = [
   {path: '', redirectTo: '/', pathMatch: 'full'},
   {
     path: '',
-    loadChildren: () => import('./features/site/site.module').then(m => m.SiteModule)
-  },
-  {
-    path: 'reforma-tributaria',
-    loadChildren: () => import('./features/reforma-tributaria/reforma-tributaria.module').then(m => m.ReformaTributariaModule)
+    loadChildren: () => import('./site/site.module').then(m => m.SiteModule)
   },
   { path: '**', redirectTo: '/' }
 ];

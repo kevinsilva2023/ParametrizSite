@@ -1,0 +1,93 @@
+.secao-autonfp {
+  color: white;
+
+  .titulo-autonfp {
+    font-weight: 700;
+    background: var(--gradient-primary);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .subtitulo-autonfp {
+    font-weight: 600;
+    color: #cfd8dc;
+  }
+
+  .card-beneficio {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px 20px;
+    transition: all 0.3s ease;
+    height: 100%;
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #cfd8dc;
+    }
+
+    &:hover {
+      background: rgba(0, 122, 255, 0.15);
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .icone-beneficio {
+    background: var(--gradient-primary);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 115, 255, 0.4);
+  }
+
+  .btn-primary {
+    background: var(--gradient-primary);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: none !important;
+    border: 1px solid var(--sand);
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .btn-outline-light {
+    font-weight: 600;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+    }
+  }
+}
+
+.floating {
+  animation: float 4s ease-in-out infinite !important;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(-0px);
+  }
+}
