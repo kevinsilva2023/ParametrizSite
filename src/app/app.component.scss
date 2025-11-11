@@ -6,22 +6,11 @@
   min-height: 100vh;
 }
 
-/**
- * Estilos globais para a aplicação
- * Aplicados a todos os componentes filhos
- */
 ::ng-deep {
-  
-  /**
-   * Scroll suave para toda a aplicação
-   */
   html {
     scroll-behavior: smooth;
   }
   
-  /**
-   * Configuração de seleção de texto
-   */
   ::selection {
     background: var(--sand);
     color: var(--royal-blue);
@@ -32,9 +21,6 @@
     color: var(--royal-blue);
   }
   
-  /**
-   * Customização da scrollbar
-   */
   ::-webkit-scrollbar {
     width: 8px;
   }
@@ -52,10 +38,6 @@
     background: var(--royal-blue-dark);
   }
 
-  
-  /**
-   * Foco acessível para elementos interativos
-   */
   button:focus,
   a:focus,
   input:focus,
@@ -65,23 +47,14 @@
     outline-offset: 2px;
   }
   
-  /**
-   * Transições suaves para mudanças de tema
-   */
   * {
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
-  /**
-   * Prevenção de overflow horizontal
-   */
   body {
     overflow-x: hidden;
   }
   
-  /**
-   * Configuração de container responsivo
-   */
   .container {
     width: 100%;
     max-width: 1200px;
@@ -95,9 +68,6 @@
     }
   }
   
-  /**
-   * Utilitários de espaçamento
-   */
   .mt-1 { margin-top: 0.25rem; }
   .mt-2 { margin-top: 0.5rem; }
   .mt-3 { margin-top: 1rem; }
@@ -121,10 +91,7 @@
   .pb-3 { padding-bottom: 1rem; }
   .pb-4 { padding-bottom: 1.5rem; }
   .pb-5 { padding-bottom: 3rem; }
-  
-  /**
-   * Utilitários de texto
-   */
+
   .text-center { text-align: center; }
   .text-left { text-align: left; }
   .text-right { text-align: right; }
@@ -134,9 +101,6 @@
   .font-medium { font-weight: 500; }
   .font-normal { font-weight: 400; }
   
-  /**
-   * Utilitários de display
-   */
   .d-none { display: none; }
   .d-block { display: block; }
   .d-flex { display: flex; }
@@ -150,9 +114,6 @@
   .align-start { align-items: flex-start; }
   .align-end { align-items: flex-end; }
   
-  /**
-   * Utilitários de responsividade
-   */
   .hidden-mobile {
     @media (max-width: 768px) {
       display: none !important;
@@ -179,9 +140,6 @@
     }
   }
   
-  /**
-   * Animações globais
-   */
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -224,9 +182,6 @@
     }
   }
   
-  /**
-   * Classes de animação
-   */
   .animate-fade-in {
     animation: fadeIn 0.6s ease-out;
   }
@@ -243,9 +198,6 @@
     animation: pulse 2s infinite;
   }
   
-  /**
-   * Estados de loading
-   */
   .loading {
     position: relative;
     pointer-events: none;
@@ -262,9 +214,6 @@
     z-index: 10;
   }
   
-  /**
-   * Configuração de impressão
-   */
   @media print {
     .no-print {
       display: none !important;
@@ -279,17 +228,6 @@
       text-decoration: underline !important;
     }
   }
-  
-  /**
-   * Configuração para modo escuro (futuro)
-   */
-  @media (prefers-color-scheme: dark) {
-    // Implementação futura para modo escuro
-  }
-  
-  /**
-   * Configuração para redução de movimento
-   */
   @media (prefers-reduced-motion: reduce) {
     *,
     *::before,

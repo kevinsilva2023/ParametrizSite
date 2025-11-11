@@ -1,0 +1,99 @@
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  gap: 40px;
+  padding: 5px 20px;
+  background: var(--royal-blue-dark);
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: var(--transition-normal) !important;
+
+  &.sidebar-collapsed {
+    left: 70px;
+  }
+
+  .logo-parametriz {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--royal-blue);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 5px 20px;
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    img {
+      margin-right: 10px;
+      width: 50px;
+
+      @media (max-width: 768px) {
+        width: 40px;
+      }
+    }
+
+    .content-texto {
+      color: white;
+
+      h1 {
+        font-size: 22px;
+        font-weight: bolder;
+        margin: 0 !important;
+        line-height: 1;
+        font-family: var(--font-logo);
+
+        @media (max-width: 768px) {
+          font-size: 18px;
+        }
+      }
+
+      h2 {
+        font-size: 10px;
+        line-height: 1;
+        font-weight: 100;
+        margin: 0 !important;
+        font-family: var(--font-logo);
+
+        @media (max-width: 768px) {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    left: 0px;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .botao-voltar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    transition: var(--transition-normal) !important;
+
+    &:hover {
+      transform: scale(1.1);
+      color: var(--sand-dark);
+    }
+
+    @media (max-width: 768px) {
+      background: var(--sand-dark-two);
+      margin-bottom: 10px;
+      padding: 2px 20px;
+      border-radius: 10px;
+    }
+  }
+}
