@@ -14,7 +14,7 @@ export class AutonfpSaibaMaisComponent implements OnInit, OnDestroy {
     { icon: 'fa-solid fa-receipt p-3 bg-primary rounded-circle text-white', title: 'Nunca Perca um Cupom', description: 'Todos os cupons são registrados automaticamente e armazenados com segurança. Rastreamento completo de cada documento.' },
     { icon: 'fa-solid fa-user-gear p-3 bg-primary rounded-circle text-white', title: 'Gerenciamento por Voluntário', description: 'Atribua responsáveis por cupons e audite todas as operações realizadas.' },
     { icon: 'fa-solid fa-chart-line p-3 bg-primary rounded-circle text-white', title: 'Relatórios Detalhados', description: 'Acompanhe cada cupom emitido com relatórios em tempo real e estatísticas inteligentes.' },
-    { icon: 'fa-solid fa-shield-halved p-3 bg-primary rounded-circle text-white', title: 'Integração com Certificado Digital', description: 'Suporte completo para certificados digitais (CFP). Emissão em conformidade com a legislação.' },
+    { icon: 'fa-solid fa-shield-halved p-3 bg-primary rounded-circle text-white', title: 'Integração com Certificado Digital', description: 'Suporte completo para certificados digitais (CPF). Emissão em conformidade com a legislação.' },
     { icon: 'fa-solid fa-lock p-3 bg-primary rounded-circle text-white', title: 'Segurança de Ponta', description: 'Criptografia end-to-end e conformidade com padrões de segurança.' },
     { icon: 'fa-solid fa-headset p-3 bg-primary rounded-circle text-white', title: 'Suporte Técnico', description: 'Equipe especializada pronta para ajudar com dúvidas e problemas.' }
   ];
