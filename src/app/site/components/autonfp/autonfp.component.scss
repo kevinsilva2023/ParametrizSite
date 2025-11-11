@@ -1,119 +1,79 @@
-.container {
-  max-width: 1200px !important;
-
+.secao-autonfp {
   color: white;
-}
 
-.fundo-animado {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
+  .titulo-autonfp {
+    font-weight: 700;
+    background: var(--gradient-primary);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-  .formas-flutuantes {
-    position: absolute;
-    inset: 0;
+  .subtitulo-autonfp {
+    font-weight: 600;
+    color: #cfd8dc;
+  }
 
-    .forma {
-      position: absolute;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.1);
-      animation: flutuacao 6s ease-in-out infinite !important;
+  .card-beneficio {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px 20px;
+    transition: all 0.3s ease;
+    height: 100%;
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+      font-weight: 600;
     }
 
-    .forma-1 {
-      width: 100px;
-      height: 100px;
-      top: 20%;
-      left: 10%;
-      animation-delay: 0s;
+    p {
+      font-size: 0.95rem;
+      color: #cfd8dc;
     }
 
-    .forma-2 {
-      width: 150px;
-      height: 150px;
-      top: 60%;
-      right: 15%;
-      animation-delay: 2s;
-    }
-
-    .forma-3 {
-      width: 80px;
-      height: 80px;
-      bottom: 30%;
-      left: 20%;
-      animation-delay: 4s;
-    }
-
-    .forma-4 {
-      width: 120px;
-      height: 120px;
-      top: 10%;
-      right: 30%;
-      animation-delay: 1s;
+    &:hover {
+      background: rgba(0, 122, 255, 0.15);
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     }
   }
 
-  @keyframes flutuacao {
-
-    0%,
-    100% {
-      transform: translateY(0px) rotate(0deg);
-    }
-
-    50% {
-      transform: translateY(-60px) rotate(180deg);
-    }
-  }
-}
-
-.frame-site {
-  position: relative;
-  background: #f8f9fa;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: inline-block;
-}
-
-.frame-site:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
-}
-
-.frame-topbar {
-  background: #e5e5e5;
-  padding: 6px 12px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-
-  .dot {
-    width: 12px;
-    height: 12px;
+  .icone-beneficio {
+    background: var(--gradient-primary);
+    color: white;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    display: inline-block;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 115, 255, 0.4);
+  }
 
-    &.red {
-      background: #ff5f56;
-    }
+  .btn-primary {
+    background: var(--gradient-primary);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: none !important;
+    border: 1px solid var(--sand);
 
-    &.yellow {
-      background: #ffbd2e;
-    }
-
-    &.green {
-      background: #27c93f;
-    }
-
-    &img {
-      width: 100%;
-      display: block;
-      border-top: 1px solid #ccc;
+    &:hover {
+      transform: scale(1.05);
     }
   }
 
+  .btn-outline-light {
+    font-weight: 600;
 
+    &:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+    }
+  }
 }
 
 .floating {
